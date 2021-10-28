@@ -1,0 +1,23 @@
+{
+  "movies": [
+    {
+      "id": "01",
+      "number": "00000035",
+      "name": "+Fast +Furious",
+      "genre": "Action",
+      "year": "2004",
+      "mainAct": [
+        "Paul Walker",
+        "Tyrese",
+        "Eva Mendes"
+      ],
+      "director": "John Singleton",
+      "producer": "New Age",
+      "language": "ENG-US",
+      "priceRent": 2.5,
+      "dateRent": "27/04/2021",
+      "description": "Aqui vai ficar a descrição do filme",
+      "posterURL": "https://upload.wikimedia.org/wikipedia/pt/thumb/2/20/2_Fast_2_Furious_2003.jpg/300px-2_Fast_2_Furious_2003.jpg"
+    }
+  ]
+}

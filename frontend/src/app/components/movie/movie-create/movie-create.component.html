@@ -1,0 +1,56 @@
+<mat-card>
+    <mat-card-title>New Movie</mat-card-title>
+    <form>
+        <div class="info-one">
+            <mat-form-field>
+                <input matInput placeholder="id" [(ngModel)]="movie.id" name="id">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Movie number" [(ngModel)]="movie.MovieNumber" name="MovieNumber">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Genre" [(ngModel)]="movie.genre" name="genre">
+            </mat-form-field>
+        </div>
+        <div class="info-two">
+            <mat-form-field>
+                <input matInput placeholder="Name" [(ngModel)]="movie.name" name="name">
+            </mat-form-field>
+            
+            <mat-form-field>
+                <input matInput placeholder="Main Act." [(ngModel)]="movie.mainAct" name="mainAct">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Director" [(ngModel)]="movie.director" name="director">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Producer" [(ngModel)]="movie.producer" name="producer">
+            </mat-form-field>
+        </div>
+        <div class="info-three">
+            <mat-form-field>
+                <input matInput placeholder="Language" [(ngModel)]="movie.language" name="language">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Price Rent" [(ngModel)]="movie.priceRent" name="priceRent">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Date of Rent" [(ngModel)]="movie.dateRent" name="dateRent">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="URL Poster" [(ngModel)]="movie.posterURL" name="posterURL">
+            </mat-form-field>
+        </div>
+        
+        <mat-form-field>
+            <input matInput placeholder="Description" [(ngModel)]="movie.description" name="description">
+        </mat-form-field>
+    </form>
+</mat-card>
+
+<button mat-raised-button (click)="createMovie()" color="primary">
+    Register
+</button>
+<button mat-raised-button (click)="cancel()">
+    Cancel
+</button>

@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidenav {
+    background-color: #E8EAF6;
+    width: 200px;
+}
+
+.sidenav i {
+    padding-right: 10px;
+}
+
+.content {
+    padding: 16px;
+    color: #ffffff;
+}

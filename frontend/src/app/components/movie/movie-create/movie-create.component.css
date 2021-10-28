@@ -1,0 +1,29 @@
+button {
+    margin: 20px 15px 0px 0px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.card-item {
+    width: 150px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.info-one {
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+.info-two {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-one, .info-two, .info-three input{
+    padding-top: 5px;
+}

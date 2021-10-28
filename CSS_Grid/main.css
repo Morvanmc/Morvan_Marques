@@ -1,0 +1,48 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-template-areas:
+      "One Two"
+      "One Three";
+      justify-items: center;
+      align-content: center;
+  }
+  
+.box-1 {
+    display: flex;
+    border: 2px solid;
+    grid-area: One; 
+    width: 600px;
+    height: 590px;
+    background-color: blue;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+  
+.box-2 { 
+    display: flex;
+    border: 2px solid;
+    grid-area: Two; 
+    width: 600px;
+    height: 290px;
+    background-image: linear-gradient(to right, rgb(0, 0, 0) , rgb(183, 0, 255));
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+  
+.box-3 { 
+    display: flex;
+    border: 2px solid;
+    grid-area: Three; 
+    width: 600px;
+    height: 290px;
+    background-image: url("logo.png");
+    color: black;
+    justify-content: center;
+    align-items: center;
+}
+  

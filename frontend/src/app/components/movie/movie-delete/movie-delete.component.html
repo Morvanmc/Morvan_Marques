@@ -1,0 +1,56 @@
+<mat-card>
+    <mat-card-title>Delete Movie</mat-card-title>
+    <form>
+        <div class="info-one">
+            <mat-form-field>
+                <input matInput placeholder="id" [value]="movie.id" name="id" disabled>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Movie number" [value]="movie.MovieNumber" name="MovieNumber" disabled>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Genre" [value]="movie.genre" name="genre" disabled>
+            </mat-form-field>
+        </div>
+        <div class="info-two">
+            <mat-form-field>
+                <input matInput placeholder="Name" [value]="movie.name" name="name" disabled>
+            </mat-form-field>
+            
+            <mat-form-field>
+                <input matInput placeholder="Main Act." [value]="movie.mainAct" name="mainAct" disabled>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Director" [value]="movie.director" name="director" disabled>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Producer" [value]="movie.producer" name="producer" disabled>
+            </mat-form-field>
+        </div>
+        <div class="info-three">
+            <mat-form-field>
+                <input matInput placeholder="Language" [value]="movie.language" name="language" disabled>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Price Rent" [value]="movie.priceRent" name="priceRent" disabled>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Date of Rent" [value]="movie.dateRent" name="dateRent" disabled>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="URL Poster" [value]="movie.posterURL" name="posterURL" disabled>
+            </mat-form-field>
+        </div>
+        
+        <mat-form-field>
+            <input matInput placeholder="Description" [value]="movie.description" name="description" disabled>
+        </mat-form-field>
+    </form>
+</mat-card>
+
+<button mat-raised-button (click)="deleteMovie()" color="warn">
+    Delete
+</button>
+<button mat-raised-button (click)="cancel()">
+    Cancel
+</button>
